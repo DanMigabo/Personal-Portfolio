@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Migabo | About Me</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        main{
+            width: 90%;
+        }
+    </style>
+    <script src="static/jscode/functions.js"></script>
+</head>
+<body>
+    <nav>   
+        <a href="/" style="font-size:26px;">dan.m</a><!--Home page-->
+        <div class="nav-links">
+            <a href="/about">Resumé</a><!--about page page-->
+            <a href="javascript:void(0);" class="contact-box" style="margin-left: 20px;" onclick="scrollToFooter()">Contact Me</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <button onclick="toggleMenu()">&#9776;</button><!--Hamburger menu button-->
+        </div>
+        <div class="toggle-menu">
+            <a href="/">Home</a><!--Home page-->
+            <a href="/about">Resumé</a><!--about page page-->
+            <a href="mailto:migabo.dan@gmail.com">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <h1 style="font-size: 56px;">Resumé</h1>
+        <div class="res-box">
+            <div class="res-left">
+                <h2>Education</h2>
+            </div>
+            <div class="res-right">
+                <p>Sep 2020-Dec 2023</p>
+                <p>University of Buckingham</p>
+                <ul>
+                    <li>2:1 Upper Second Class Honours</li>
+                    <li>Bachelor of Science in Computing [Artificial Intelligence and Robotics]</li>
+                    <li>Buckingham England</li>
+                </ul>
+                <br>
+                <p>Sep 2017-Jun 2019</p>
+                <p>Green Hills Academy</p>
+                <ul>
+                    <li>International Baccalaureate</li>
+                    <li>Kigali Rwanda</li>
+                </ul>
+            </div>
+        </div>
+        <div class="res-box">
+            <div class="res-left">
+                <h2>Experience</h2>
+            </div>
+            <div class="res-right">
+                <p>Sep 2024-Current</p>
+                <p>TigerSoft Ltd</p>
+                <ul>
+                    <li>Software Developer</li>
+                    <ul>
+                        <li>Full-stack Web Development</li>
+                        <li>Full-stack Mobile Application Development</li>
+                        <li>Technical Documentation</li>
+                    </ul>
+                    <li>Kigali Rwanda</li>
+                </ul>
+                <br>
+                <p>Sep 2019-Aug 2020</p>
+                <p>TigerSoft Ltd</p>
+                <ul>
+                    <li>Software Developer</li>
+                    <ul>
+                        <li>Technical Documentation</li>
+                    </ul>
+                    <li>Kigali Rwanda</li>
+                </ul>
+                <br>
+                <p>Sep 2022-Apr 2024</p>
+                <p>McDonald's</p>
+                <ul>
+                    <li>Crew Member</li>
+                    <li>Buckingham England</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="res-box2">
+            <h2>Skill</h2>
+            <div class="rs2">
+                <div class="box2">
+                    <h2>Core skills</h2>
+                    <p>Software Development</p>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Mobile Application Development</li>
+                        <li>Game Development</li>
+                        <ul>
+                            <li>Unreal Engine 5</li>
+                            <li>Unity2D</li>
+                        </ul>
+                    </ul>
+                    <br>
+                    <p>Art & Design</p>
+                    <ul>
+                        <li>UI & UX Design</li>
+                        <li>3D Art</li>
+                        <ul>
+                            <li>Blender</li>
+                            <li>Modeling, Texturing, Animation, Rigging</li>
+                        </ul>
+                        <li>2D Art</li>
+                        <ul>
+                            <li>Drawing, Painting</li>
+                            <li>Story-boarding and Animation</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="box2">
+                    <h2>Technical skills</h2>
+                    <p>Software Development</p>
+                    <ul>
+                        <li>Programming Languages</li>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript, TypeScript</li>
+                            <li>C++</li>
+                            <li>C</li>
+                            <li>SQL</li>
+                            <li>HTML, CSS</li>
+                        </ul>
+                        <li>Frameworks, Tools and Libraries</li>
+                        <ul>
+                            <li>Angular and NestJS</li>
+                            <li>Flask</li>
+                            <li>PostgreSQL</li>
+                            <li>OpenCV, Dlib, face_recognition</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="rs2">
+                <div class="box2">
+                    <h2>Languages </h2>
+                    <ul>
+                        <li>Kinyarwanda (Native)</li>
+                        <li>French (Fluent)</li>
+                        <li>English (Fluent)</li>
+                        <li>Dutch (Intermediate-Self Taught)</li>
+                        <li>Swahili (Beginner-Self Taught)</li>
+
+                    </ul>
+                </div>
+                <div class="box2">
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li>Skateboarding</li>
+                        <li>Guitar</li>
+                        <li>Drawing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+</body>
+<footer id="footer">
+    <h1>Looking for a Freelance Developer?</h1>
+    <div class="contact-box" style="margin-bottom: 40px;">
+        <a href="mailto:migabo.dan@gmail.com" id="contact-link">Get in touch</a>
+    </div>
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/danmigabo/" target="_blank" class="contact" id="contact-linked">
+            <img src="static/images/icons/linkedIn(NH1).png" alt="LinkedIn" class="contact-icon" id="linked-icon">
+        </a>
+        <a href="https://github.com/DanMigabo" target="_blank" class="contact" id="contact-github">
+            <img src="static/images/icons/git(NH1).png" alt="GitHub" class="contact-icon" id="github-icon">
+        </a>
+        <a href="https://www.upwork.com/freelancers/~013c8cfa5e2667b982?mp_source=share" target="_blank" class="contact" id="contact-upwork">
+            <img src="static/images/icons/upworknh1.png" alt="Upwork" class="contact-icon" id="upwork-icon">
+        </a>
+    </div>
+    
+    <p>2024 © Dan Migabo</p>
+</footer>
+</html>

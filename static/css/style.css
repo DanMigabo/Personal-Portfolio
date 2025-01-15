@@ -1,0 +1,372 @@
+/*Desktop, pc, laptop*/
+body {
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Removes default margin */
+    font-family: 'Orbitron', sans-serif;
+    
+}
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+main {
+    flex-grow: 1; /* Ensures main content grows to fill available space */
+    min-height: 30vh; /* Ensures main content takes up at least 100% of the viewport height */
+    
+}
+
+h1,h2,h3,p,a, li{
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.nav-right {
+    display: flex;                  /* Use flexbox for right-side items */
+    align-items: center;            /* Vertically align items */
+}
+nav {
+    width: 90%; /* Set width to 90% of the viewport */
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.toggle-menu{
+    display: none;    
+}
+.mobile-menu-btn{
+    display: none;
+    z-index: 1000;
+}
+.contact-box {
+    display: inline-block;           /* Ensures the box is sized according to content */
+    padding: 10px 20px;              /* Adds padding inside the box */
+    border: 2px solid white;         /* White border with 2px thickness */
+    border-radius: 25px;             /* Circular border radius */
+    color: white;                    /* Text color (white) */
+    font-size: 16px;                 /* Font size */
+    background-color: transparent;  /* Optional: keeps the background transparent */
+    text-align: center;              /* Centers the text inside the box */
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+.socials{
+    gap: 50px;
+    display: flex;
+}
+.socials img{
+    width: 50px;
+    height: 50px;
+
+}
+
+
+.contact {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.contact-icon {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px;
+    transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+  }
+  
+  /* Hover effect for LinkedIn */
+  #contact-linked:hover .contact-icon {
+    content: url('/static/images/icons/linkedIn(H1).png');
+  }
+  
+  /* Hover effect for GitHub */
+  #contact-github:hover .contact-icon {
+    content: url('/static/images/icons/git(H1).png');
+  }
+  
+  /* Hover effect for Upwork */
+  #contact-upwork:hover .contact-icon {
+    content: url('/static/images/icons/upworkh1.png');
+  }
+
+.sec1{
+    display: flex;
+    height: 850px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.sec1 img {
+    height: 500px;
+    width: 500px; /* Ensure the width is the same as the height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the entire circular area without distortion */
+    margin-right: 100px;
+}
+.sec1 h1{
+    font-size: 50px;
+}
+.sec1 h2{
+    font-size: 30px;
+}
+.sec1 h3{
+    font-size: 30px;
+}
+.sec1 p{
+    font-size: 24px;
+}
+.sec2{
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+}
+.proj-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between the boxes */
+    width: 100%; /* Ensure container takes up the full width */
+    gap: 20px; /* Add space between the proj-box items */
+
+}
+.proj-box{
+    border: 2px solid white; /* Thin white border */
+    width: 500px;
+    height: 700px;
+}
+.proj-box img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+.btn{
+    margin-top: 50px;
+    display: inline-block;           /* Ensures the box is sized according to content */
+    padding: 10px 20px;              /* Adds padding inside the box */
+    border: 2px solid white;         /* White border with 2px thickness */
+    color: white;                    /* Text color (white) */
+    font-size: 16px;                 /* Font size */
+    background-color: transparent;  /* Optional: keeps the background transparent */
+    text-align: center;    
+}
+.res-box {
+    border-top: 2px solid white;  /* Top border */
+    border-bottom: 2px solid white;  /* Bottom border */
+    margin-bottom: 50px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.res-right{
+    width: 50%;
+}
+.res-right{
+    min-height: 100%;
+    width: 50%;
+}
+.res-box2{
+    border-top: 2px solid white;  /* Top border */
+    border-bottom: 2px solid white;  /* Bottom border */
+    margin-bottom: 50px;
+}
+.rs2{
+    display: flex;
+    justify-content: space-between;
+}
+.box2{
+    width: 50%;
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    main{
+        min-height: 10vh;
+    }
+    .sec1{
+        display: flex;
+        height: 500px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .sec1 h1{
+        font-size: 30px;
+    }
+    .sec1 h2{
+        font-size: 20px;
+    }
+    .sec1 p{
+        font-size: 17px;
+    }
+    .sec1 img {
+        height: 300px;
+        width: 300px; /* Ensure the width is the same as the height */
+        border-radius: 50%; /* Makes the image circular */
+        object-fit: cover; /* Ensures the image covers the entire circular area without distortion */
+        margin-right: 100px;
+    }
+    .sec2{
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        margin-bottom: 100px;
+    }
+    .sec2{
+        width: 90%;
+    }
+    
+    .proj-box{
+        border: 2px solid white; /* Thin white border */
+        width: 70%;
+        height: 300px;
+        background-color: grey;
+    }
+    footer{
+        position: relative;
+    }
+    footer h1{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    
+    
+  
+    
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    nav{
+        margin-top: 10px;
+    }
+    .toggle-menu {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed position to take up full screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; /* Full screen height */
+        background-color: #161616;
+        z-index: 500; /* Makes sure it's above other elements */
+        justify-content: center; /* Centers the content horizontally */
+        align-items: center; /* Centers the content vertically */
+        flex-direction: column; /* Stacks the links vertically */
+        text-align: center; /* Centers the text */
+    }
+    .toggle-menu a {
+        color: white; /* White text color */
+        font-size: 40px; /* Set font size */
+        text-decoration: none; /* Remove underline */
+        margin: 50px 0; /* Adds space between the links */
+
+    }
+    .mobile-menu-btn{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    .mobile-menu-btn button {
+        background-color: transparent;
+        z-index: 1000; /* Same z-index as the toggle menu, ensures it is above other elements */
+        border: none;
+        color: white;
+        font-size: 30px;
+        letter-spacing: 2px; /* Adjust for wider text */
+        font-stretch: expanded; /* If supported */
+    }
+    .mobile-menu-btn button.open {
+        content: "\00d7"; /* X icon */
+    }
+    p {
+        color: white;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 100; /* Reduces the thickness of the text */
+        line-height: 1.5; /* Space between lines for better readability */
+    }
+    footer h1{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .sec1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec1 h1,h2,h3,p{
+        text-align: center;
+    }
+    .sec1 h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .sec1 h2{
+        font-size: 20px;
+    }
+    .sec1 img{
+        height: 350px;
+        width:350px;
+        margin: 20px 0; /* Adds some space between the image and other content */
+
+    }
+    .sec1 p{
+        font-size: 16px;
+    }
+    .proj-container{
+        flex-direction: column;
+    }
+    .proj-box{
+        border: 2px solid white; /* Thin white border */
+        width: 100%;
+        height: 500px;
+        background-color: grey;
+    }
+    
+    .res-left{
+        width: 40%;
+    }
+    .res-right{
+        width: 60%;
+    }
+    .res-box p{
+        font-size: 16px;
+        text-align: left;
+    }
+    .res-box h2{
+        font-size: 18px;
+        text-align: left;
+    }
+    .res-box li{
+        font-size: 12px;
+        text-align: left;
+    }
+    .res-box2{
+        align-items: left;
+        justify-content: left;
+    }
+    .res-box2 h2{
+        font-size: 18px;
+        text-align: left;
+    }
+    .res-box2 li{
+        font-size: 12px;
+        text-align: left;
+
+    }
+    .res-box2 p{
+        text-align: left;
+    }
+}
+
